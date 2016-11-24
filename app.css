@@ -1,0 +1,46 @@
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.main-layout {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.word-input {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.timer-progress {
+  height: 2px;
+}
+
+.main-menu {
+  margin-top: 20px;
+}
